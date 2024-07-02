@@ -1,10 +1,14 @@
+
+// Q. Print day of the week based on week day number.
+// Switch case conditional statement reduces the code length as compare to if-else ladder
+
 package conditionalstatements;
 
-public class SwitchCaseStatement {
+public class SwitchCaseStatement2 {
 
 	public static void main(String[] args) {
 		
-		int weekDay = 6;
+		int weekDay = 2;
 		
 		switch(weekDay) {
 		case 1 : System.out.println("Sunday");
