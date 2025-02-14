@@ -6,7 +6,7 @@ public class ForEachLoop {
 
 		int a[] = {1,2,3,4,5,6,7,8,9,10};
 
-		//For each loop to find all the elements of single dimensional array
+		// For each loop to find all the elements of single dimensional array
 		System.out.println("Single Dimensional array");
 		for(int array : a) {
 			System.out.print(array + " ");
