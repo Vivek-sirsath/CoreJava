@@ -11,7 +11,7 @@ interface Shape{
 	}
 
 	static void rectangle() {
-		System.out.println("This is a Rectangle");
+		System.out.println("The area of a Rectangle:- " + length*width );
 	}
 }
 
