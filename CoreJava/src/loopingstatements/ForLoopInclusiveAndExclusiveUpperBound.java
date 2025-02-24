@@ -54,32 +54,32 @@ package loopingstatements;
 public class ForLoopInclusiveAndExclusiveUpperBound {
 
 	public static void main(String[] args) {
-		
+
 		// Inclusive Upper Bound (<=):
-		
+
 		System.out.println("Inclusive Bound (<=)");
 		for (int i = 1; i <= 5; i++) {
-		    System.out.println(i); // 1 2 3 4 5
+			System.out.println(i); // 1 2 3 4 5
 		}
-		
+
 		// Exclusive Upper Bound (<):
-		
+
 		System.out.println("Exclusive Bound (<)");
 		for (int i = 1; i < 5; i++) {
-		    System.out.println(i); // 1 2 3 4
+			System.out.println(i); // 1 2 3 4
 		}
-		
+
 		System.out.println("In case of array: Exclusive (<)");
-		int[] arr1 = {10, 20, 30, 40, 50};
-		for (int i = 0; i < arr1.length; i++) {  // Correct
-		    System.out.println(arr1[i]); // 10 20 30 40 50
+		int[] arr1 = { 10, 20, 30, 40, 50 };
+		for (int i = 0; i < arr1.length; i++) { // Correct
+			System.out.println(arr1[i]); // 10 20 30 40 50
 		}
-		
+
 		System.out.println("In case of array: If not Exclusive (<=)");
-		int[] arr2 = {10, 20, 30, 40, 50};
-		for (int i = 0; i <= arr2.length; i++) {  // Incorrect // ArrayIndexOutOfBoundsException
-		    System.out.println(arr2[i]); // 10 20 30 40
-		    // arr2[5] does not exist only up to 4th index is present in array.
+		int[] arr2 = { 10, 20, 30, 40, 50 };
+		for (int i = 0; i <= arr2.length; i++) { // Incorrect // ArrayIndexOutOfBoundsException
+			System.out.println(arr2[i]); // 10 20 30 40
+			// arr2[5] does not exist only up to 4th index is present in array.
 		}
 
 	}
