@@ -3,7 +3,8 @@ package string;
 public class StringClassMethods {
 
 	public static void main(String[] args) {
-		String s = "Welcome to string class";
+		
+		String s = "Welcome to string class...";
 
 		//Print Output in console
 		System.out.println(s);
@@ -23,8 +24,9 @@ public class StringClassMethods {
 		//charAt() - Returns a single character based on index
 		System.out.println("Character at 5th index: " + s.charAt(5));
 
-		//contains() -  Presence of substring in main string
-		System.out.println("'string' presence in string??: " + s.contains("string"));
+		//contains() -  Presence of substring in main string (Case Sensitive)
+		System.out.println("'Welcome' presence in string?: " + s.contains("Welcome"));  // true
+		System.out.println("'welcome' presence in string?: " + s.contains("welcome"));  // false
 
 		//equalsIgnoreCase() - compare strings
 		String s1 = "zzzzzzz";
@@ -35,15 +37,15 @@ public class StringClassMethods {
 		//replace() - replace single/multiple characters in string 
 		System.out.println("class is replaced with lecture: " + s.replace("class", "lecture"));
 
-		//subString() - extract substring from main string 
-		System.out.println("Substring: " + s.subSequence(10, 17));
+		//subSequence() - extract substring from main string based on index
+		System.out.println("SubSequence: " + s.subSequence(10, 17));
 
-		//split() - Divide string into multiple parts using delimeter
+		//split() - Divide string into multiple parts using delimiter
 		String mail = "abc@gmail.com";
 		System.out.println("First part of splitted string: " + mail.split("@")[0]);
 		System.out.println("First part of splitted string: " + mail.split("@")[1]);
 
-		//toUpperCase(),toLowerCase() -  change the case of string
+		//toUpperCase(),toLowerCase() - change the case of string
 		String caseText = "hELp";
 		System.out.println(caseText.toUpperCase());
 		System.out.println(caseText.toLowerCase());
